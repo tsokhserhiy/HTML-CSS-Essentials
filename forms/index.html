@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            fieldset {
+                border: 1px solid grey;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            label {
+                width: 150px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+    	    <div id="main">
+    		    <div id="container">
+    			    <div id="content" role="main">
+                <form>
+                  <h1>Order Form</h1>
+                  <fieldset>
+                    <legend>General info</legend>
+                      <label for="email">Email</label>
+                      <input type="email" id="email" placeholder="your@email.com" /><br  />
+                      <label for="login">Login</label>
+                      <input type="text" id="login" placeholder="Login" pattern="[1-3][A-Za-z]" /><br  />
+                      <label for="password">Password</label>
+                      <input type="password" id="password" placeholder="Password"/><br />
+                  </fieldset>
+                  <fieldset>
+                    <legend>User Info</legend>
+                      <label for="name">First Name</label>
+                      <input type="text" id="name" placeholder="John"><br  />
+                      <label for="surname">Second Name</label>
+                      <input type="text" id="surname" placeholder="Doe"><br  />
+                      <label for="gender">Gender</label>
+                      <input type="checkbox" id="gender" checked> Male
+                      <input type="checkbox" id="gender1"> Female<br  />
+                      <label for="age">Age</label>
+                      <input type="number" id="age" placeholder="32"><br>
+                      <label for="aboutme">About me</label>
+                      <textarea id="aboutme"></textarea>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Order Info</legend>
+                    <label for="select">Product</label>
+                    <select id="select">
+                      <option value="iphone5">iphone5</option>
+                      <option value="iphone6">iphone6</option>
+                      <option value="iphone7">iphone7</option>
+                    </select><br>
+                    <label for="frontcolor">Front color</label>
+                    Black <input type="radio" id="frontcolor" checked>
+                    Pink <input type="radio" id="frontcolor1">
+                    Gold <input type="radio" id="frontcolor2"><br>
+                    <label for="backside_color">Back-side color</label>
+                    <input type="color" id="backside_color" value=""><br>
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" placeholder="5"><br>
+                    <label for="deliv_date">Delivery Date</label>
+                    <input type="date" id="deliv_date" disabled>
+                   </fieldset>
+                   <input type="reset" name="reset" value="Reset">
+                   <input type="submit" name="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
