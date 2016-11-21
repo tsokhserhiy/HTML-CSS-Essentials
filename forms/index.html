@@ -29,16 +29,16 @@
                       <label for="email">Email</label>
                       <input type="email" id="email" placeholder="your@email.com" required/><br  />
                       <label for="login">Login</label>
-                      <input type="text" id="login" placeholder="Login" pattern="[1-3][A-Za-z]" required/><br  />
+                      <input type="text" id="login" placeholder="Login" pattern="^[A-Za-z1-3]+$" required/><br  />
                       <label for="password">Password</label>
                       <input type="password" id="password" placeholder="Password" required/><br />
                   </fieldset>
                   <fieldset>
                     <legend>User Info</legend>
                       <label for="name">First Name</label>
-                      <input type="text" id="name" pattern="[A-Za-z]" placeholder="John" required><br  />
+                      <input type="text" id="name" pattern="^[A-Za-z]+$" placeholder="John" required><br  />
                       <label for="surname">Second Name</label>
-                      <input type="text" id="surname" pattern="[A-Za-z]" placeholder="Doe" required><br  />
+                      <input type="text" id="surname" pattern="^[A-Za-z]+$" placeholder="Doe" required><br  />
                       <label for="gender">Gender</label>
                       <input type="checkbox" id="gender" checked> Male
                       <input type="checkbox" id="gender1"> Female<br  />
